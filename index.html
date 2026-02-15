@@ -324,6 +324,18 @@
 
     .nameplate:hover { opacity: 0.9; }
 
+    /* Visitor counter */
+    .counter-badge {
+      position: fixed;
+      bottom: 12px;
+      right: 12px;
+      opacity: 0.35;
+      transition: opacity 0.3s;
+      z-index: 100;
+    }
+
+    .counter-badge:hover { opacity: 0.8; }
+
     .speaker {
       width: 75%;
       height: clamp(20px, 100%, 50px);
@@ -343,6 +355,10 @@
 </head>
 
 <body>
+  <a href="https://88x31.lol" class="counter-badge" target="_blank">
+    <img src="https://88x31.lol/counter.gif" alt="visitor counter" width="88" height="31">
+  </a>
+
   <div class="tv">
     <div class="cable">
       <svg viewBox="0 0 250 120">
